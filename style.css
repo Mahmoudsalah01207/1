@@ -45,12 +45,20 @@ nav .containe {
     color: black;
 
 }
+.dark-mode .book button:hover{
+    color: red;
+}
 .dark-mode  {
     background-color: black;
     color: white!important;
   }
+  .dark-mode button .text1{
+    color: white !important;
+  }
   
-  
+  .dark-mode button .text1:hover{
+    color: red !important;
+  }
   .dark-mode .in-touch i   {
     color: orange;
     text-decoration: none;
@@ -87,6 +95,14 @@ color: orange;
     background-image: linear-gradient(90deg, orange 0% 50%, transparent 50% 100%)
 
 }
+.dark-mode .book button{
+    color: black;
+    font-size: larger;
+    font-weight: 600;
+
+}
+
+
 
 .logo span:nth-of-type(2) {
     color: red;
@@ -94,9 +110,11 @@ color: orange;
 
 
 .nav-links {
+    padding-top: 10px;
     display: flex;
     gap: 30px;
-    font-weight: 500;
+    font-size: large;
+    font-weight: 700;
 
 }
 
@@ -132,9 +150,7 @@ color: orange;
     width: 100%; 
 }
 
- .dark-mode a:hover {
-    border-bottom: 3px solid orange;
-}
+
 .dark-mode span.ad {
     color: orange;
 }
@@ -152,6 +168,7 @@ color: orange;
     box-shadow: 0px 0px 10px 5px #f7dada63;
 
 }
+
 
 
 
@@ -282,13 +299,14 @@ color: orange;
     color: white;
     margin-right: 20px;
     padding: 10px 40px;
-    background-color: rgb(218, 45, 45);
+    background-color: rgb(231, 40, 40);
     border-radius: 20px;
     border-top-left-radius: 0;
+    
 }
 
 .book:hover button {
-    color: darkred
+    color: rgb(202, 53, 53)
     
 }
 
@@ -328,7 +346,7 @@ color: orange;
 }
 
 .watch:hover button,i {
-    color: darkred;
+    color: red;
 }
 
 
@@ -1038,14 +1056,11 @@ padding: 10 20 px ;
 
     .nav-links {
         justify-content: center;
-        ;
         display: none;
-        ;
     }
 
     .night {
         margin-left: auto;
-        ;
     }
 
     .menu {
