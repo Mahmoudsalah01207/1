@@ -22,7 +22,7 @@ h1 {
 }
 
 .containe {
-    width: 85%;
+    width: 90%;
     margin: auto;
 }
 
@@ -30,13 +30,25 @@ nav .containe {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 15px 0;
 
 }
 
 
+.nav-line {
+    position: absolute;
+    bottom: -3px; /* Adjust position as needed */
+    left: 0;
+    width: 100%;
+    height: 2px; /* Thickness of the line */
+    background-color: #007bff; /* Color of the line */
+}
+
+
 .logo {
+    font-size: 30px;
     font-weight: bold;
+   font-family:   Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
 }
 
 
@@ -51,6 +63,12 @@ nav .containe {
 .dark-mode  {
     background-color: black;
     color: white!important;
+  }
+  .dark-mode .gallry{
+    background-color: black !important;
+  }
+  .dark-mode .active{
+    color: white !important;
   }
   .dark-mode button .text1{
     color: white !important;
@@ -78,10 +96,11 @@ color: orange;
     background-color: orange;
     border: solid 25px orange;
   }  
-  .dark-mode nav{
-    background-color: black;
+  .dark-mode .navbar {
+    background-color: black !important;
     box-shadow: gray;
   }
+
   .dark-mode nav a , .dark-mode .logo span  {
     color: white;
   }
@@ -109,16 +128,16 @@ color: orange;
 }
 
 
-.nav-links {
+.nav-item  {
     padding-top: 10px;
     display: flex;
     gap: 30px;
-    font-size: large;
+    font-size: 20px;
     font-weight: 700;
 
 }
 
-.nav-links a {
+.nav-item  a {
     color: black;
     text-decoration: none;
     padding-bottom: 5px;
@@ -129,13 +148,13 @@ color: orange;
 }
 
 
-.nav-links a {
+.nav-item  a {
     position: relative; 
     text-decoration: none; 
-    color: black; 
+    color: rgba(0, 0, 0, 0.384); 
 }
 
-.nav-links a::before {
+.nav-item  a::before {
     content: ''; 
     position: absolute;
     bottom: -3px; 
@@ -146,8 +165,8 @@ color: orange;
     transition: width 0.6s ease; 
 }
 
-.nav-links a:hover::before {
-    width: 100%; 
+.nav-item  a:hover::before {
+    width: 90%; 
 }
 
 
@@ -239,7 +258,7 @@ color: orange;
     width: 100%;
     display: flex;
     justify-content: space-around;
-    background-color: rgba(128, 128, 128, 0.63);
+    background-color:#eee;
     padding-top: 40px;
     padding-bottom: 40px;
 
@@ -250,23 +269,28 @@ color: orange;
     width: 40%;
     align-self: center;
     /* font-size: 65px; */
-    line-height: 54.2px;
+    line-height: 50px;
 }
 
 .home-text h2 {
     font-family: 'Amatic SC', cursive;
-    font-size: 65px;
-    line-height: 54.2px;
+    font-size: 70px;
+    line-height: 80px;
     text-align: left;
+    font-weight: bold;
+    color: #1c1c20;
 
 
 }
 
 .home-text p {
-    font-size: 16px;
-    line-height: 25.6px;
+    margin-top: 20px;
+    font-size: 20px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #37373f;
+    line-height: 40px;
 }
+
 
 .home-img {
     width: 40%;
@@ -295,18 +319,18 @@ color: orange;
 }
 
 .book button {
-    border: solid 3px rgba(255, 0, 0, 0.445);
+    border: solid 3px rgba(209, 49, 49, 0.959);
     color: white;
     margin-right: 20px;
-    padding: 10px 40px;
-    background-color: rgb(231, 40, 40);
+    padding: 0px 30px;
+    background-color:  rgb(226, 44, 44);
     border-radius: 20px;
     border-top-left-radius: 0;
     
 }
 
 .book:hover button {
-    color: rgb(202, 53, 53)
+    color: black
     
 }
 
@@ -389,8 +413,8 @@ color: orange;
 }
 
 .walter h2 {
-    font-weight: bold;
-
+    font-weight: bolder;
+margin-top: 20px;
     font-family: 'Inter', sans-serif;
     font-size: 19px;
 }
@@ -398,7 +422,9 @@ color: orange;
 .walter h3 {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 15px;
-    line-height: 0%;
+    line-height: 4px;
+
+    font-weight: 600;
     color: rgba(0, 0, 0, 0.322);
 }
 
@@ -455,12 +481,12 @@ color: orange;
 }
 
 .gallry {
-    background-color: gray;
+    background-color: #eee !important;
     padding-top: 1em;
 
 }
 
-.container {
+.containers {
     width: 90%;
     margin: auto;
     padding: 40px 0;
@@ -518,6 +544,8 @@ opacity: 1;
   }
   .title {
     text-align: center;
+    margin: 0;
+
   }
 
 /* .container {
@@ -581,8 +609,8 @@ h2 {
 .contante h3 {
     text-align: left;
     font-family: 'Inter', sans-serif;
-    font-size: 20px;
-    line-height: 5px;
+    font-size: 25px;
+    font-weight: bold;
     color: rgba(0, 0, 0, 0.377);
 }
 
@@ -831,12 +859,18 @@ textarea::placeholder {
     font-size: 20px;
     padding: 0.5rem 0rem;
     text-decoration: none;
+    align-items: center;
 }
 
 
 
-@media (max-width:979px) and (min-width:768px) {
+@media (max-width:990px) and (min-width:768px) {
 
+    .containe li {
+        display: flex;
+        justify-content: center;
+        
+            }
     .home-contante {
         flex-wrap: wrap-reverse;
         text-align: center;
@@ -867,9 +901,9 @@ textarea::placeholder {
 
     .walter {
         margin-top: 40px;
-        width: 80%;
-        padding-bottom: 30px;
-        justify-content: space-between;
+        width: 60%;
+        padding-bottom: 40px;
+        justify-content: space-around;
     }
 
     .our-address {
@@ -884,6 +918,7 @@ textarea::placeholder {
     .a {
         display: flex;
         justify-content: center;
+        justify-content: space-evenly;
 
     }
 
@@ -892,8 +927,31 @@ textarea::placeholder {
     .subject-form {
         width: 98%;
     }
+    .contante h3 {
+        text-align: left;
+        font-family: 'Inter', sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+        color: rgba(0, 0, 0, 0.377);
+    }
+    
+    .contante p {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 16px;
+        line-height: 5px;
+    }
+    .underline {
+        border-bottom: 3px solid red !important;
+        width: 12% !important;
+    }
+    
 }
 @media screen and (max-width:499px) {
+    .containe li {
+        display: flex;
+        justify-content: center;
+        
+            }
        .home-contante {
         flex-wrap: wrap-reverse;
         text-align: center;
@@ -999,6 +1057,16 @@ padding: 10 20 px ;
         padding-left: 10px;
 
     }
+    .containe li {
+        display: flex;
+        justify-content: center;
+        
+            }
+            .underline {
+                border-bottom: 3px solid red !important;
+                width: 20% !important;
+                text-align: center;
+            }
 }
 
 
@@ -1033,16 +1101,37 @@ padding: 10 20 px ;
     .our-address {
         width: 100%;
     }
+    .our-address .contante h3{
+        margin-top: 12px;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    .our-address .contante{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+    }
+    
 
     .book button {
         text-align: center;
+    }
+    .night{
+        display: flex;
+        justify-content: left;
     }
 
     .watch,
     .book {
         margin: auto;
+        padding: 40px;
     }
 
+    .home-text .b {
+        padding: 40px;
+
+    }
     .rejest,
     .email,
     .subject-form {
@@ -1058,6 +1147,11 @@ padding: 10 20 px ;
         justify-content: center;
         display: none;
     }
+    .containe li {
+display: flex;
+justify-content: center;
+
+    }
 
     .night {
         margin-left: auto;
@@ -1066,6 +1160,63 @@ padding: 10 20 px ;
     .menu {
         display: block;
     }
+    .container-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Mealify, .Subscribe, .in-touch {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .Mealify img {
+        width: 20%;
+        margin-bottom: 10px;
+    }
+
+    .Mealify span {
+        font-size: 24px;
+    }
+
+    .Mealify p, .Mealify h2, .Subscribe p, .Subscribe h3, .quick-links .links {
+        font-size: 14px;
+    }
+
+    .Subscribe form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Subscribe form input {
+        width: 80%;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    .Subscribe form button {
+        padding: 10px 20px;
+        width: 60%;
+    }
+
+    .quick-links {
+        justify-content: center;
+
+    }
+    .link {
+        display: block;
+    }
+    .link a {
+        display: block;
+    }
+
+    .underline {
+        border-bottom: 3px solid red !important;
+        width: 23% !important;
+    }
+  
  
 }
 
@@ -1075,8 +1226,15 @@ padding: 10 20 px ;
       width: 100%;
     }
 
-
-
+    .containe li {
+        display: flex;
+        justify-content: center;
+        
+            }
+            .underline {
+                border-bottom: 3px solid red !important;
+                width: 23% !important;
+            }
     
   }
   @media screen and (min-width: 1600px) {
@@ -1104,4 +1262,10 @@ padding: 10 20 px ;
     .map-img img {
         width: 100%;
     }
+    
+}
+
+.underline {
+    border-bottom: 3px solid red !important;
+    width: 90%;
 }
