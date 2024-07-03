@@ -1,17 +1,63 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Inter:wght@200&display=swap" rel="stylesheet">
-    
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
  
 </head>
 
 <body  class="container-1,containe-1">
-    <nav>
+    <nav class="navbar navbar-expand-lg bg-white fixed-top">
+       
         <div class="containe">
+          
+          <div class="logo">
+            <span>Mealify</span><span class="ad">.</span>
+        </div>     
+             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                <li class="nav-item ">
+                    <a class="nav-link underline " aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item  ">
+                <a class="nav-link " href="#chef">Chef</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link " href="#gallry">Gallery</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+            <hr class="nav-hr"> <!-- Horizontal line below the nav items -->
 
+          </div>
+          <div class="night">
+            <button onclick="toggleDarkMode()" style="border: none; background-color: transparent;"><i id="modeIcon" class="fas fa-moon"></i>
+            </button>
+
+            
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+          </button>
+        </div>
+       
+      </nav>
+
+
+
+
+        <!-- <div class="containe">
+
+            
             <div class="logo">
                 <span>Mealify</span><span class="ad">.</span>
             </div>
@@ -26,33 +72,60 @@
                 <button onclick="myFunction()"><i class="fa-solid fa-moon"></i></button>
 
                 
-            </div>
+            </div> -->
             <script>
-                function myFunction() {
-                   var element = document.body;
-                   element.classList.toggle("dark-mode");
-                }
+                function toggleDarkMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+
+            // Toggle icon between moon and sun
+            var icon = document.getElementById('modeIcon');
+            if (icon.classList.contains('fa-moon')) {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+            }
+        }
+
+
                 </script>
                 <script>
-                $("a").click(function(){
-                    var pageId = $(this).attr("data-page");
-                    $("html, body").animate({ scrollTop: $("#"+pageId).offset().top }, 1000);
-                  });
+                    $(document).ready(function() {
+                        $('.nav-link').click(function(event) {
+                            // Prevent default behavior of anchor tag
+                            event.preventDefault('underline');
+                            // Remove underline class from all nav-links
+                            $('.nav-link').removeClass('underline');
+                            // Add underline class to the clicked nav-link
+                            $(this).addClass('underline');
+                            // Scroll to the section
+                            var targetId = $(this).attr('href');
+                            var targetElement = $(targetId);
+                            if (targetElement.length) {
+                                $('html, body').animate({
+                                    scrollTop: targetElement.offset().top
+                                }, 500);
+                            }
+                        });
+                    });
                 </script>
                 
-            <div class="menu">
+            <!-- <div class="menu">
                 <i class="fa-solid fa-bars"></i>
-            </div>
-        </div>
-    </nav>
+            </div> -->
+        
     <div class=" home-contante" id="home">
         <div class=" home-text">
+            <div class="b">
             <h2>Enjoy Your Healthy <br>
                 Delicious Food</h2>
-            <p>Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque
+            <p>Sed autem laudantium dolores. Voluptatem itaque ea consequatur <br> eveniet. Eum quas beatae cumque
                 eum
                 quaerat.
             </p>
+            </div>
             <div class="a">
                 <div class="book">
                     <a href="#contact"> <button style="font-weight: 500 ; font-size: large;"> Book a Table</button></a>
@@ -79,7 +152,7 @@
     <div class="chef " id="chef">
         <h3> CHEFS</h3>
         <H2>Our  <span>Proffesional</span> Chefs</H2>
-        <div class="chef-contante  container">
+        <div class="chef-contante  containers">
             <div class="Walter">
                 <div class="Walter-img">
                     <img src="chefs-1.jpg" alt="">
@@ -116,7 +189,7 @@
                 <div class="Walter-img">
                     <img src="chefs-3.jpg" alt="">
                     <div class="information-img">
-                        <a href="https://www.facebook.com/"> <i class="fa-brands fa-facebook"></i></a>
+                          <a href="https://www.facebook.com/"> <i class="fa-brands fa-facebook"></i></a>
                         <a href="https://x.com/"> <i class="fa-brands fa-twitter"></i></a>
                         <a href="https://www.instagram.com/"> <i class="fa-brands fa-instagram"></i></a>
                         <a href="https://www.linkedin.com/"> <i class="fa-brands fa-linkedin"></i></a>
@@ -131,10 +204,10 @@
 
         </div>
     </div>
-    <div class="gallry"id="gallry">
-        <div class="container">
-            <h2 class="title"> Gallery</h2>
-            <h3 class="title"> check <span> Our Gallery</span></h3>
+    <div class="gallry"id="gallry" style="background-color: white; padding-bottom: 50px;">
+        <div class="containers">
+            <h2 class="title" style="padding-top: 20px; font-size: 20px; color: #7f7f90;"> GALLERY</h2>
+            <h3 class="title" style="font-size: 50px; font-family: Amatic SC, sans-serif; margin-bottom: 40px;"> check <span> Our Gallery</span></h3>
 
             <div class="photo-gallery">
                 <div class="column">
@@ -198,7 +271,7 @@
 
 
 
-    <div class="contact" id="contact">
+    <div class="contact" id="contact" style="padding-top: 30px;">
         <h3> contact</h3>
         <h2>Need Help ?  <span>Contact Us </span></h2>
         <div class="map-img ">
