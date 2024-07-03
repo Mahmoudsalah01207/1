@@ -30,7 +30,7 @@ nav .containe {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 0;
+    padding: 3px 0;
 
 }
 
@@ -67,11 +67,14 @@ nav .containe {
   .dark-mode .gallry{
     background-color: black !important;
   }
-  .dark-mode .active{
+  .dark-mode .underline{
     color: white !important;
   }
   .dark-mode button .text1{
     color: white !important;
+  }
+  .dark-mode .chef h3 {
+    color: #37373f;
   }
   
   .dark-mode button .text1:hover{
@@ -97,12 +100,12 @@ color: orange;
     border: solid 25px orange;
   }  
   .dark-mode .navbar {
-    background-color: black !important;
-    box-shadow: gray;
+    background-color: #171717 !important;
+    box-shadow: rgb(78, 77, 77);
   }
 
   .dark-mode nav a , .dark-mode .logo span  {
-    color: white;
+    color: rgba(255, 255, 255, 0.514);
   }
 .dark-mode .book  button ,.dark-mode .Subscribe  button , .dark-mode.contact button ,.dark-mode .contact-us button  
  {
@@ -160,7 +163,7 @@ color: orange;
     bottom: -3px; 
     left: 0;
     width: 0;
-    height: 3px; 
+    height: 2px; 
     background-color: red; 
     transition: width 0.6s ease; 
 }
@@ -184,7 +187,7 @@ color: orange;
 }
 .dark-mode .home-contante , .dark-mode .gallry{
     background-color: rgba(0, 0, 0, 0.966);
-    box-shadow: 0px 0px 10px 5px #f7dada63;
+    box-shadow: 0px 0px 10px 5px #141414be;
 
 }
 
@@ -377,11 +380,10 @@ color: orange;
 
 .chef {
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 60px;
 
-    margin-top: 20px;
-    margin-bottom: 4rem;
+    margin-bottom: 70px;
     font-family: 'Inter', sans-serif;
     font-size: 14px;
 }
@@ -401,11 +403,11 @@ color: orange;
 }
 
 .walter {
-    width: 30%;
+    width: 28%;
     align-items: center;
     transition: all 0.3s;
     overflow: hidden;
-    padding-bottom: 0.5rem; 
+    padding-bottom: 0rem; 
     box-shadow: 3px 4px 10px 1px #88888863;
     border-radius: 10px;
 
@@ -447,11 +449,12 @@ margin-top: 20px;
 .walter:hover {
     transform: scale(1.05);
     transition: all 0.4s;
+    
 
 }
 
 .information-img {
-    height: 40%;
+    height: 50%;
     width: 10%;
     top: 0%;
     left: 100%;
@@ -459,8 +462,8 @@ margin-top: 20px;
     position: absolute;
     background-color: rgba(128, 128, 128, 0.274);
     opacity: 0;
-    transition: left 1s;
-    transition: all 1s 1s;
+    transition: left 0.5s;
+    transition: all 1s 0.5s;
 }
 
 .information-img a {
@@ -470,7 +473,9 @@ margin-top: 20px;
     display: block;
     font-size: 20px;
     padding: 10px 0px;
-    color: rgba(110, 102, 102, 0.986);
+}
+.information-img i{
+    color: rgba(110, 102, 102, 0.986) 
 }
 
 .walter-img:hover .information-img {
@@ -564,7 +569,7 @@ opacity: 1;
 .contact {
     width: 89%;
     margin: auto;
-    box-shadow: 5px 4px 10px 2px #88888863;
+    box-shadow: 5px 4px 10px 2px #1d1b1b63;
 
 }
 
@@ -956,6 +961,9 @@ textarea::placeholder {
         flex-wrap: wrap-reverse;
         text-align: center;
     }
+    #home{
+        padding-bottom: 50px;
+    }
 
     .home-img {
         width: 100%;
@@ -965,9 +973,14 @@ textarea::placeholder {
     .home-text {
         width: 100%;
         flex-wrap: wrap;
+        
 
     }
 
+    .home-text p{
+        font-size: 14px !important;
+        line-height: 30px;
+    }
     .home-text h2 {
         text-align: center;
     }
@@ -977,6 +990,7 @@ padding: 10 20 px ;
     .walter {
         width: 100%;
         padding-bottom: 30px;
+        margin-bottom: 30px;
     }
 
     .our-address {
@@ -999,9 +1013,16 @@ padding: 10 20 px ;
 
     
 
-    .book button {
-        text-align: center;
-    }
+.book button {
+    border: solid 3px rgba(209, 49, 49, 0.959);
+    color: white;
+    margin-right: 20px;
+    padding: 0px 30px;
+    background-color:  rgb(226, 44, 44);
+    border-radius: 20px;
+    text-align: center;
+    
+}
 
     .watch,
     .book {
@@ -1233,7 +1254,7 @@ justify-content: center;
             }
             .underline {
                 border-bottom: 3px solid red !important;
-                width: 23% !important;
+                width: 50% !important;
             }
     
   }
@@ -1266,6 +1287,18 @@ justify-content: center;
 }
 
 .underline {
-    border-bottom: 3px solid red !important;
+    border-bottom: 2px solid red !important;
     width: 90%;
+    text-align: ;
+}
+.night .fa-moon {
+    color: black;
+}
+
+.fa-sun {
+    color: white;
+}
+
+.dark-mode .fa-sun {
+    color: white;
 }
