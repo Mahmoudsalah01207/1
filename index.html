@@ -13,7 +13,7 @@
  
 </head>
 
-<body  class="container-1,containe-1">
+<div  class="container-1,containe-1   ">
     <nav class="navbar navbar-expand-lg bg-white fixed-top">
        
         <div class="containe">
@@ -24,19 +24,18 @@
              <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav m-auto mb-2 mb-lg-0">
                 <li class="nav-item ">
-                    <a class="nav-link underline " aria-current="page" href="#home">Home</a>
+                    <a class="nav-link" aria-current="page" href="#home">Home</a>
               </li>
-              <li class="nav-item  ">
-                <a class="nav-link " href="#chef">Chef</a>
+              <li class="nav-item">
+                <a class="nav-link" href="#chef">Chefs</a>
               </li>
-              <li class="nav-item ">
-                <a class="nav-link " href="#gallry">Gallery</a>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallry">Gallery</a>
               </li>
-              <li class="nav-item ">
+              <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
-            <hr class="nav-hr"> <!-- Horizontal line below the nav items -->
 
           </div>
           <div class="night">
@@ -92,6 +91,7 @@
 
                 </script>
                 <script>
+                    var offset = 100;
                     $(document).ready(function() {
                         $('.nav-link').click(function(event) {
                             // Prevent default behavior of anchor tag
@@ -105,8 +105,8 @@
                             var targetElement = $(targetId);
                             if (targetElement.length) {
                                 $('html, body').animate({
-                                    scrollTop: targetElement.offset().top
-                                }, 500);
+                                    scrollTop: targetElement.offset().top-offset
+                                }, 400);
                             }
                         });
                     });
@@ -117,13 +117,11 @@
             </div> -->
         
     <div class=" home-contante" id="home">
-        <div class=" home-text">
+        <div class=" home-text container-fluid ">
             <div class="b">
             <h2>Enjoy Your Healthy <br>
                 Delicious Food</h2>
-            <p>Sed autem laudantium dolores. Voluptatem itaque ea consequatur <br> eveniet. Eum quas beatae cumque
-                eum
-                quaerat.
+            <p>Sed autem laudantium dolores. Voluptatem itaque ea consequatur <br> eveniet. Eum quas beatae cumque eum quaerat.
             </p>
             </div>
             <div class="a">
@@ -146,10 +144,10 @@
         </div>
         <div class=" home-img "> <img src="hero-img.png" alt=""> </div>
     </div>
-    </div>
-    </div>
+   
 
     <div class="chef " id="chef">
+        <div class="container-fluid ">
         <h3> CHEFS</h3>
         <H2>Our  <span>Proffesional</span> Chefs</H2>
         <div class="chef-contante  containers">
@@ -204,8 +202,9 @@
 
         </div>
     </div>
+</div>
     <div class="gallry"id="gallry" style="background-color: white; padding-bottom: 50px;">
-        <div class="containers">
+        <div class="containers container-fluid ">
             <h2 class="title" style="padding-top: 20px; font-size: 20px; color: #7f7f90;"> GALLERY</h2>
             <h3 class="title" style="font-size: 50px; font-family: Amatic SC, sans-serif; margin-bottom: 40px;"> check <span> Our Gallery</span></h3>
 
@@ -271,7 +270,7 @@
 
 
 
-    <div class="contact" id="contact" style="padding-top: 30px;">
+    <div class="contact container-fluid " id="contact" style="padding-top: 30px;">
         <h3> contact</h3>
         <h2>Need Help ?  <span>Contact Us </span></h2>
         <div class="map-img ">
@@ -351,7 +350,7 @@
     </div>
 
     <div class=" footer">
-        <div class="container-row">
+        <div class="container-row container-fluid ">
             <div class="Mealify">
                 <img src="favicon.png" alt="">
                 <span> Mealify.</span>
