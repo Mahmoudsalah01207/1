@@ -2,10 +2,7 @@
     box-sizing: border-box;
 }
 
-.container-1,.containe-1{
-    max-width:1200px ;
 
-}
 body {
     margin: 0;
 }
@@ -260,7 +257,7 @@ color: orange;
 .home-contante {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color:#eee;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -269,7 +266,7 @@ color: orange;
 }
 
 .home-text {
-    width: 40%;
+    width: 50%;
     align-self: center;
     /* font-size: 65px; */
     line-height: 50px;
