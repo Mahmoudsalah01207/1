@@ -451,7 +451,7 @@ margin-top: 20px;
 }
 
 .information-img {
-    height: 50%;
+    height: 60%;
     width: 10%;
     top: 0%;
     left: 100%;
@@ -464,7 +464,7 @@ margin-top: 20px;
 }
 
 .information-img a {
-    margin: 10px;
+    margin: 7px;
     display: flex;
     align-items: center;
     display: block;
@@ -903,10 +903,15 @@ textarea::placeholder {
 
     .walter {
         margin-top: 40px;
-        width: 60%;
+        width: 45%;
         padding-bottom: 40px;
         justify-content: space-around;
     }
+    .information-img {
+        height: 70%;
+        text-align: center;
+    }
+    
 
     .our-address {
         width: 100%;
@@ -914,6 +919,7 @@ textarea::placeholder {
 
     .book button {
         text-align: center;
+        margin: auto;
     }
 
     .watch,
@@ -927,7 +933,18 @@ textarea::placeholder {
     .rejest,
     .email,
     .subject-form {
-        width: 98%;
+        width: 90%;
+    }
+
+    .Subscribe form{
+        width: 100%;
+        display: flex;
+       
+
+    }
+    .Subscribe button {
+        width: 25% !important;
+        margin-left: 10px;
     }
     .contante h3 {
         text-align: left;
@@ -975,7 +992,7 @@ textarea::placeholder {
     }
 
     .home-text p{
-        font-size: 14px !important;
+        font-size: 13px !important;
         line-height: 30px;
     }
     .home-text h2 {
@@ -996,18 +1013,22 @@ padding: 10 20 px ;
         justify-content: space-between;
     }
     .icon {
-        width: 15%;
-        font-size: 5px;
+        width: 15% ;
+        font-size: 2px;
     }
     .contante {
-        width: 80%;
+        width: 75%;
+        padding-top: 10p;
 
     }
 .contante p {
-    font-size: 15px;
+    font-size: 13px;
 
-}        
-
+}    
+.in-touch a {
+    font-size: 18px;
+}    
+}
     
 
 .book button {
@@ -1039,9 +1060,9 @@ padding: 10 20 px ;
 
     .nav-links {
         justify-content: center;
-        ;
+        
         display: none;
-        ;
+        
     }
 
     .night {
@@ -1119,6 +1140,7 @@ padding: 10 20 px ;
         margin-top: 30px;
         width: 100%;
         padding-bottom: 30px;
+
     }
 
     .our-address {
@@ -1159,6 +1181,7 @@ padding: 10 20 px ;
     .email,
     .subject-form {
         width: 98%;
+        
     }
 
     nav .containe {
@@ -1249,6 +1272,14 @@ justify-content: center;
       width: 100%;
     }
 
+    .chef{
+        margin-top: 20px;
+    }
+    .walter{
+        margin-top: 30px;
+        width: 100%;
+        margin-bottom: 30px;
+    }
     .containe li {
         display: flex;
         justify-content: center;
@@ -1257,6 +1288,32 @@ justify-content: center;
             .underline {
                 border-bottom: 3px solid red !important;
                 width: 50% !important;
+            }
+            .home-contante {
+                flex-wrap: wrap-reverse;
+                text-align: center;
+            }
+        
+            .home-img {
+                width: 100%;
+                flex-wrap: wrap;
+            }
+        
+            .home-text {
+                width: 100%;
+                flex-wrap: wrap;
+        
+            }
+            .home-text p {
+                font-size: 15px;
+            }
+        
+            .home-text h2 {
+                text-align: center;
+            }
+        
+            .Subscribe button {
+                margin-top: 10px;
             }
     
   }
