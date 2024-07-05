@@ -773,7 +773,7 @@ textarea::placeholder {
     width: 91%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: first baseline;
     background-color: black;
 }
@@ -858,6 +858,9 @@ textarea::placeholder {
     color: white;
 
 }
+.container-fluid {
+    background-color: transparent;
+}
 
 
 .in-touch {
@@ -866,8 +869,9 @@ textarea::placeholder {
 
 .in-touch a {
     display: flex;
-    font-size: 20px;
-    padding: 0.5rem 0rem;
+    font-size: 18px;
+    padding: 1rem 0rem;
+    margin-left: 20px;
     text-decoration: none;
     align-items: center;
 }
@@ -1035,7 +1039,42 @@ padding: 10 20 px ;
 }    
 .in-touch a {
     font-size: 18px;
-}    
+} 
+
+
+.container-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.Mealify {
+    width: 100%;
+    padding-left: 10px;
+
+}
+.Subscribe{
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+.Subscribe button , .Subscribe input {
+    width: 100%;
+}
+.in-touch {
+    width: 100%;
+    padding-left: 10px;
+
+}
+.in-touch i {
+    margin-right: 5px;
+    text-align: center;
+}
+.containe li {
+    display: flex;
+    justify-content: center;
+    
+        }
 }
     
 
@@ -1081,11 +1120,6 @@ padding: 10 20 px ;
     .menu {
         display: block;
     }
-    .container-row{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
  
             .underline {
                 border-bottom: 3px solid red !important;
@@ -1094,7 +1128,7 @@ padding: 10 20 px ;
 
 
 
-@media screen and (min-width: 500px) and (max-width: 767px) {
+    @media screen and (min-width: 500px) and (max-width: 767px) {
                 .home-contante {
         flex-wrap: wrap-reverse;
         text-align: center;
@@ -1188,7 +1222,6 @@ justify-content: center;
     .container-row {
         flex-direction: column;
         align-items: center;
-        
     }
 
     .Mealify, .Subscribe, .in-touch {
