@@ -65,7 +65,8 @@ nav .containe {
     background-color: black !important;
   }
   .dark-mode .underline{
-    color: white !important;
+    border-bottom: 2px solid white !important;
+    color: white;
   }
   .dark-mode button .text1{
     color: white !important;
@@ -84,6 +85,10 @@ nav .containe {
   .dark-mode .chef span  {
 color: orange;
   }
+ .dark-mode  .nav-item  a::before {
+   
+    background-color: white; 
+}
   .dark-mode.container
   .dark-mode .gallry span{
     color: orange;
@@ -163,6 +168,9 @@ color: orange;
     height: 2px; 
     background-color: red; 
     transition: width 0.6s ease; 
+}
+.dark-mode .nav-item:hover .nav-link {
+    color: white ;
 }
 
 .nav-item  a:hover::before {
@@ -1108,10 +1116,9 @@ padding: 10 20 px ;
             }
             .underline {
                 border-bottom: 3px solid red !important;
-                width: 17% !important;
                 text-align: center;
             }
-}
+
 
 
 
@@ -1260,7 +1267,7 @@ justify-content: center;
 
     .underline {
         border-bottom: 3px solid red !important;
-        width: 20% !important;
+        width: auto !important;
     }
   
  
@@ -1315,6 +1322,9 @@ justify-content: center;
             .Subscribe button {
                 margin-top: 10px;
             }
+            .underline{
+                width: auto !important;
+            }
     
   }
   @media screen and (min-width: 1600px) {
@@ -1348,7 +1358,6 @@ justify-content: center;
 .underline {
     border-bottom: 2px solid red !important;
     width: 90%;
-    text-align: ;
 }
 .night .fa-moon {
     color: black;
