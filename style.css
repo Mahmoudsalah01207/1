@@ -1108,7 +1108,7 @@ padding: 10 20 px ;
             }
             .underline {
                 border-bottom: 3px solid red !important;
-                width: 20% !important;
+                width: 17% !important;
                 text-align: center;
             }
 }
@@ -1260,7 +1260,7 @@ justify-content: center;
 
     .underline {
         border-bottom: 3px solid red !important;
-        width: 23% !important;
+        width: 20% !important;
     }
   
  
