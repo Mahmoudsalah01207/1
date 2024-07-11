@@ -11,7 +11,7 @@ nav {
     position: fixed;
     width: 100%;
     z-index: 999;
-    box-shadow: 0px 0px 10px 5px #77747463;
+    /* box-shadow: 0px 0px 10px 5px #77747463; */
 
 }
 h1 {
@@ -19,7 +19,7 @@ h1 {
 }
 
 .containe {
-    width: 90%;
+    width: 80%;
     margin: auto;
 }
 
@@ -27,7 +27,7 @@ nav .containe {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3px 0;
+    padding: 1px 0;
 
 }
 
@@ -58,8 +58,7 @@ nav .containe {
     color: red;
 }
 .dark-mode  {
-    background-color: black;
-    color: white!important;
+    background-color: #252525;
   }
   .dark-mode .gallry{
     background-color: black !important;
@@ -71,10 +70,19 @@ nav .containe {
   .dark-mode button .text1{
     color: white !important;
   }
-  .dark-mode .chef h3 {
-    color: #37373f;
+  .dark-mode .chef  {
+    background-color: #202020;
+    box-shadow: none;
   }
-  
+  .dark-mode .contante h3 ,.dark-mode .contante p  {
+    color: white;
+  }
+  .dark-mode .chef h3 {
+    color: #838388;
+  }
+  .dark-mode .walter h2, .dark-mode .chef h2 {
+    color: white;
+  }
   .dark-mode button .text1:hover{
     color: red !important;
   }
@@ -82,7 +90,7 @@ nav .containe {
     color: orange;
     text-decoration: none;
   }
-  .dark-mode .chef span  {
+  .dark-mode .chef span  ,.dark-mode .gallry span {
 color: orange;
   }
  .dark-mode  .nav-item  a::before {
@@ -96,23 +104,38 @@ color: orange;
   .dark-mode .contact span  {
     color: orange;
   }
+  .dark-mode .our-address {
+    box-shadow:  3px 4px 10px 1px black;
+background-color: black;
+  }
+
    .dark-mode .our-address i {
     color: white;
     background-color: orange;
-    border: solid 25px orange;
+    border: solid 20px orange;
   }  
-  .dark-mode .navbar {
-    background-color: #171717 !important;
-    box-shadow: rgb(78, 77, 77);
+  .dark-mode nav {
+    background-color: rgb(15, 14, 14) !important;
   }
 
-  .dark-mode nav a , .dark-mode .logo span  {
+  .dark-mode nav a , .dark-mode.ad span  {
     color: rgba(255, 255, 255, 0.514);
   }
+  .dark-mode .le{
+    color: white;
+  }
+
 .dark-mode .book  button ,.dark-mode .Subscribe  button , .dark-mode.contact button ,.dark-mode .contact-us button  
  {
-    background-color: orange !important;
+    background-color: hsl( 35 , 72% , 44% ) ;
     border: orange;
+}
+.dark-mode .contact-us {
+    box-shadow:  3px 4px 10px 1px black;
+
+}
+.dark-mode .contact h2 ,.dark-mode .gallry h3{
+    color: white !important;
 }
 
 .dark-mode .watch-outline  {
@@ -126,6 +149,22 @@ color: orange;
 
 }
 
+.dark-mode .walter {
+    box-shadow:  3px 4px 10px 1px black;
+    background-color: #171717;
+    
+}
+.dark-mode  .walter-img::before {
+    content: "";
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 100%;
+            height:94px;
+            background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"%3E%3Cpath fill="%23171717" fill-opacity="1" d="M0,192L48,192C96,192,192,192,288,186.7C384,181,480,171,576,160C672,149,768,139,864,133.3C960,128,1056,128,1152,144C1248,160,1344,192,1392,208L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"%3E%3C/path%3E%3C/svg%3E');
+            background-repeat:   repeat-x;        
+            z-index: 1;
+  } 
 
 
 .logo span:nth-of-type(2) {
@@ -139,6 +178,7 @@ color: orange;
     gap: 30px;
     font-size: 20px;
     font-weight: 700;
+    padding-bottom: 10px;
 
 }
 
@@ -169,7 +209,7 @@ color: orange;
     background-color: red; 
     transition: width 0.6s ease; 
 }
-.dark-mode .na:hover .nav-link {
+.dark-mode .nav-item:hover .nav-link {
     color: white ;
 }
 
@@ -191,10 +231,14 @@ color: orange;
     display: none;
 }
 .dark-mode .home-contante , .dark-mode .gallry{
-    background-color: rgba(0, 0, 0, 0.966);
-    box-shadow: 0px 0px 10px 5px #141414be;
+    background-color:#252525;
+    /* box-shadow: 0px 0px 10px 5px #141414be; */
 
 }
+.dark-mode .home-text p, .dark-mode.home-text h2  {
+    color: white  ;
+}
+
 
 
 
@@ -267,17 +311,22 @@ color: orange;
     display: flex;
     justify-content: space-between;
     background-color:#eee;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 70px;
+    padding-top: 60px;
+    height: 100%;
 
 
 }
 
 .home-text {
-    width: 50%;
+    margin-top: 48px;
+    width: 46%;
     align-self: center;
     /* font-size: 65px; */
+    padding-top: 60px;
     line-height: 50px;
+    justify-content: center;
+    align-items: center;
 }
 
 .home-text h2 {
@@ -303,12 +352,11 @@ color: orange;
 .home-img {
     width: 40%;
     align-self: center;
-    padding-top: 40px;
-    margin-top: 50px;
+    margin-top: auto;
 }
 
 .home-img img {
-    width: 90%;
+    width: 80%;
 }
 
 .home-contante button {
@@ -327,14 +375,14 @@ color: orange;
 }
 
 .book button {
-    border: solid 3px rgba(209, 49, 49, 0.959);
+    border: solid 3px rgba(230, 46, 45, 1);
     color: white;
-    margin-right: 20px;
-    padding: 0px 30px;
-    background-color:  rgb(226, 44, 44);
-    border-radius: 20px;
+    margin-right: 36px;
+    padding:0px 24px;
+    background-color: rgba(230, 46, 45, 1);
+    border-radius: 50px;
     border-top-left-radius: 0;
-    
+line-height: 35px;    
 }
 
 .book:hover button {
@@ -385,67 +433,83 @@ color: orange;
 
 .chef {
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 60px;
 
-    margin-bottom: 70px;
+    padding-bottom: 70px;
     font-family: 'Inter', sans-serif;
     font-size: 14px;
 }
-
+.chef h3 {
+    font-size: 14px;
+    line-height: 1px;
+    padding-top: 50px;
+    margin-top: 50px;
+}
 
 .chef h2 {
-    padding-bottom: 10px;
+    padding-bottom: px;
     font-family: 'Amatic SC', cursive;
-    font-size: 70px;
+    font-size: 50px;
 }
 
 .chef-contante {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin: auto;
+    justify-content: space-around;
+    
 }
 
 .walter {
-    width: 28%;
+    width: 30.7%;
     align-items: center;
     transition: all 0.3s;
     overflow: hidden;
-    padding-bottom: 0rem; 
     box-shadow: 3px 4px 10px 1px #88888863;
     border-radius: 10px;
-
-
+    height: 20%;
+    position: relative;
 }
 
 .walter h2 {
     font-weight: bolder;
 margin-top: 20px;
     font-family: 'Inter', sans-serif;
-    font-size: 19px;
+    font-size: 20px;
+    color:black;
 }
 
-.walter h3 {
+.walter h4 {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 15px;
-    line-height: 4px;
-
+    font-size: 0.875rem;
+    margin-block: 0.3125rem 0.625rem;
+    line-height: 10px;
     font-weight: 600;
-    color: rgba(0, 0, 0, 0.322);
+    color: #7f7f90;
 }
 
 .walter p {
     padding: 0px 20px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 17px;
+    font-size: 0.9375rem;
+    font-style: italic;
     font-weight: 600;
-    color: rgb(151, 147, 147);
+    color: #767680d8;
 }
 
 .walter-img {
     position: relative;
 }
+ .walter-img::before {
+    content: "";
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 100%;
+            height:94px;
+            color: white;
+            background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"%3E%3Cpath fill="%23ffffff" fill-opacity="1" d="M0,192L48,192C96,192,192,192,288,186.7C384,181,480,171,576,160C672,149,768,139,864,133.3C960,128,1056,128,1152,144C1248,160,1344,192,1392,208L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"%3E%3C/path%3E%3C/svg%3E');
+            background-repeat:   repeat-x;        
+            z-index: 1;
+  }
 
 .walter-img img {
     width: 100%;
@@ -453,22 +517,22 @@ margin-top: 20px;
 
 .walter:hover {
     transform: scale(1.05);
-    transition: all 0.4s;
+    transition: all 0.3s;
     
 
 }
 
 .information-img {
-    height: 60%;
-    width: 10%;
-    top: 0%;
+    height: auto;
+    width: 13%;
+    top: 5%;
     left: 100%;
     right: 0;
+    border-radius: 5px;
     position: absolute;
-    background-color: rgba(128, 128, 128, 0.274);
+    background-color: rgba(236, 232, 228, 0.582);
     opacity: 0;
-    transition: left 0.5s;
-    transition: all 1s 0.5s;
+    transition: left 0.4s 0.6s, opacity 0.6s 0.3s;
 }
 
 .information-img a {
@@ -476,18 +540,16 @@ margin-top: 20px;
     display: flex;
     align-items: center;
     display: block;
-    font-size: 20px;
+    font-size: 18px;
     padding: 10px 0px;
 }
 .information-img i{
-    color: rgba(110, 102, 102, 0.986) 
+    color: rgba(110, 102, 102, 0.568) 
 }
 
 .walter-img:hover .information-img {
     opacity: 1;
-    /* overflow: hidden; */
-    left: 90%;
-    /* transition: 2s; */
+    left: 84%;
 }
 
 .gallry {
@@ -519,7 +581,7 @@ margin-top: 20px;
     bottom: 0;
     right: 0;
     position: absolute;
-    background-color: rgba(128, 128, 128, 0.274);
+    background-color: rgba(7, 9, 11, 0.548);
     opacity: 0;
     transition: top 0.5s;
 }
@@ -538,6 +600,7 @@ opacity: 1;
     top: 0;
     
 }
+
 
 
   .column {
@@ -574,9 +637,9 @@ opacity: 1;
 .contact {
     width: 89%;
     margin: auto;
-    box-shadow: 5px 4px 10px 2px #1d1b1b63;
-
+margin-top: 50px;
 }
+
 
 .contact h3,
 h2 {
@@ -590,7 +653,7 @@ h2 {
     flex-wrap: wrap;
 }
 
-.map-img img {
+.map-img #map {
     width: 99%;
     margin: auto;
     padding-left: 1rem;
@@ -608,48 +671,58 @@ h2 {
 }
 
 .icon {
-    width: 15%;
+    width: 10%;
 }
+
 
 .contante {
     width: 90%;
+    padding-left: 10px;
 
 }
 
 .contante h3 {
     text-align: left;
-    font-family: 'Inter', sans-serif;
-    font-size: 25px;
-    font-weight: bold;
-    color: rgba(0, 0, 0, 0.377);
+    font-family: "Inter", sans-serif;
+    font-size: 1.25rem;
+    font-weight: bolder;
+    color:#7d7d7d;
+    margin: 0 0 5px 0;
 }
 
 .contante p {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 16px;
-    line-height: 5px;
+    color: #171717;
 }
 
 .icon i {
-    font-size: 20px;
+    font-size: 15px;
     border-radius: 50%;
     color: white;
     background-color: #ff004b;
-    border: solid 25px red;
+    border: solid 20px rgb(207, 12, 12);
 }
 
 
-.rejest,
-.email {
-    width: 48%;
+.rejest  {
+    justify-content: space-between;
 }
+.rejest form {
+    width: 49%;
+}
+
 
 .contact-us {
+    padding-top: 20px;
+    margin: auto;
     display: flex;
-    width: 100%;
+    width: 98%;
     justify-content: space-around;
     flex-wrap: wrap;
     flex-direction: row;
+    box-shadow: 0px 0px 2px 2px #dad6d663;
+    border-radius: 5px;
 
 
 }
@@ -720,31 +793,43 @@ textarea::placeholder {
 }
 
 .c button {
-    background-color: #ff0000;
+    background-color: rgb(163, 7, 7);
+
+    border: red;
     color: white;
-    padding: 10px 30px;
+    padding: 15px 40px;
     margin-bottom: 2rem;
     border-radius: 30px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 15px;
+} 
+.c button:hover {
+    background-color: #ff0000;
+
 }
 
 .footer {
     padding-top: 2rem;
     margin-top: 2rem;
-    background-color: black;
     padding-bottom: 20px;
+    background-image: 
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("textured-metal-background.jpg");
+    background-size: cover;
+    background-blend-mode: overlay;
 }
 
 .Mealify {
     width: 25%;
+    justify-content: center;
 
 }
 
 .Mealify img {
-    width: 15%;
+    width: 12%;
     vertical-align: middle;
     margin-right: 0.5rem;
+    margin-bottom: 10px;
 
 }
 
@@ -754,6 +839,7 @@ textarea::placeholder {
     font-weight: bold;
     color: white;
 }
+
 
 .Mealify p {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -768,6 +854,9 @@ textarea::placeholder {
     color: white;
 }
 
+.rejest {
+    display: flex ;
+}
 .container-row {
     margin: auto;
     width: 91%;
@@ -775,11 +864,10 @@ textarea::placeholder {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: first baseline;
-    background-color: black;
 }
 
 .Subscribe {
-    width: 40%;
+    width: 44%;
 
 }
 
@@ -788,6 +876,7 @@ textarea::placeholder {
     font-size: 18px;
     line-height: 16px;
     color: white;
+    font-weight: bolder;
 }
 
 .Subscribe p {
@@ -798,24 +887,25 @@ textarea::placeholder {
 }
 
 .Subscribe input {
-    width: 75%;
-    padding: 0.5rem;
+    width: 80%;
+    padding: 0.4rem;
 }
 
 .Subscribe button {
-    width: 20%;
+    width: 19.2%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     color: white;
+    height: 41px;
     background-color: red;
-    padding: 0.5rem;
     border: 2px solid red;
+    vertical-align:auto;
 }
 
 .line {
-    width: 80%;
+    width: 100%;
     margin: 10px auto;
-    height: 4px;
+    height: 1px;
     background-color: white;
 
 }
@@ -826,8 +916,8 @@ textarea::placeholder {
 
 }
 
-.link a {
-    padding: 0rem 1rem;
+.link i {
+    padding: 0rem 1.6rem;
     color: white;
 }
 
@@ -836,12 +926,20 @@ textarea::placeholder {
     width: 100%;
     text-align: center;
 }
+.quick h2 {
+    display: flex;
+    justify-self: start;
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
 .quick-links{
     width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: start;
     text-align: left;
 }
 .links:hover {
@@ -851,11 +949,16 @@ textarea::placeholder {
   }
 
 .links {
-    width: 40%;
+    width: 45%;
+    padding-bottom: 5px;
+    margin: auto;
+
 }
 .links a {
     text-decoration: none;
     color: white;
+    font-size: 15px;
+    font-weight:  500 ;
 
 }
 .container-fluid {
@@ -864,31 +967,47 @@ textarea::placeholder {
 
 
 .in-touch {
-    width: 28%;
+    width: 30%;
+}
+.in-touch i {
+    color: red;
+    font-size: 20px
+}
+.in-touch h2 {
+    color: white;
+    font-size: 20px;
+text-align: start;
+margin-left: 40px;
 }
 
 .in-touch a {
     display: flex;
-    font-size: 18px;
-    padding: 1rem 0rem;
+    font-size: 16px;
+    padding: 0.5rem 0rem;
     margin-left: 20px;
     text-decoration: none;
     align-items: center;
+    color:white;
+    font-weight: 500;
 }
 
 
 
-@media (max-width:990px) and (min-width:768px) {
+
+@media (max-width:1000px) and (min-width:768px) {
 
     .containe li {
         display: flex;
         justify-content: center;
         
             }
-    .home-contante {
-        flex-wrap: wrap-reverse;
-        text-align: center;
-    }
+            .home-contante {
+                flex-wrap: wrap-reverse;
+                text-align: center;
+                height: auto;
+                margin-top: 20px;
+            }
+           
 
     .home-img {
         width: 100%;
@@ -901,13 +1020,23 @@ textarea::placeholder {
 
     }
 
+    .walter-img::before {
+        content: "";
+                position: absolute;
+                bottom: -3px;
+                left: 0;
+                width: 100%;
+                height:70px  ;
+                background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"%3E%3Cpath fill="%23ffffff" fill-opacity="1" d="M0,192L48,192C96,192,192,192,288,186.7C384,181,480,171,576,160C672,149,768,139,864,133.3C960,128,1056,128,1152,144C1248,160,1344,192,1392,208L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"%3E%3C/path%3E%3C/svg%3E');
+                background-repeat:   repeat-x;        
+                z-index: 1;
+      } 
     .home-text h2 {
         text-align: center;
     }
 
     .chef-contante {
         display: flex;
-
         justify-content:space-around;
         
         
@@ -915,7 +1044,7 @@ textarea::placeholder {
 
     .walter {
         margin-top: 40px;
-        width: 45%;
+        width: 46%;
         padding-bottom: 40px;
         justify-content: space-around;
     }
@@ -954,6 +1083,13 @@ textarea::placeholder {
        
 
     }
+    .rejest {
+        display: block;
+    }
+    .rejest form {
+        width: 100%;
+    }
+
     .Subscribe button {
         width: 25% !important;
         margin-left: 10px;
@@ -975,6 +1111,105 @@ textarea::placeholder {
         border-bottom: 3px solid red !important;
         width: 12% !important;
     }
+
+
+
+    .Mealify, .in-touch {
+        width:100% ;
+        margin-bottom: 20px;
+    }
+
+    .Subscribe{
+        width: 100%;
+    }
+
+    .Mealify img {
+        width: 10%;
+        margin-bottom: 10px;
+    }
+
+    .Mealify span {
+        font-size: 24px;
+    }
+
+    .Mealify p, .Mealify h2, .Subscribe p, .Subscribe h3, .quick-links .links {
+        font-size: 14px;
+    }
+
+    .Subscribe form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    .Subscribe form input {
+        width: 90%;
+        margin-top: 10px;
+        margin-right: 10px;
+        height: 50px;
+    }
+
+    .Subscribe form button {
+        width: 35%;
+       height: 50px;
+    }
+
+    .quick-links {
+        justify-content: center;
+
+    }
+    .link {
+        display: flex;
+        justify-content: space-between;
+    }
+    .link a {
+        display: block;
+    }
+    .link {
+        align-items: start;
+    }
+    .in-touch {
+        width: 100%;
+    }
+    .in-touch h2 {
+        padding-top: 20px;
+        text-align: start;
+    }
+    .in-touch .link {
+        display: block;
+        text-align: start;
+    }
+    
+
+    .underline {
+        border-bottom: 3px solid red !important;
+        width: auto !important;
+    }
+
+    .Mealify {
+        flex: 1 1 45%; /* Take up roughly half the width */
+        margin: 10px;
+        order: 1; /* Default order */
+    }
+    
+    .in-touch {
+        flex: 1 1 47%; /* Take up roughly half the width */
+        margin: 5px;
+        order: 2; /* Appear in the place of Subscribe */
+    }
+    .in-touch  a {
+        font-size: 13px !important;
+    }
+    
+    .Subscribe {
+        flex: 1 1 100%; /* Take up full width */
+        margin: 10px;
+        order: 3; /* Appear below Mealify and in-touch */
+    }
+    .Subscribe button {
+        margin-top: 10px;
+    }
     
 }
 @media screen and (max-width:499px) {
@@ -986,14 +1221,15 @@ textarea::placeholder {
        .home-contante {
         flex-wrap: wrap-reverse;
         text-align: center;
+        height: auto;
+        margin-top: 20px;
     }
-    #home{
-        padding-bottom: 50px;
-    }
+   
 
     .home-img {
         width: 100%;
         flex-wrap: wrap;
+
     }
 
     .home-text {
@@ -1002,6 +1238,17 @@ textarea::placeholder {
         
 
     }
+    .walter-img::before {
+        content: "";
+                position: absolute;
+                bottom: -3px;
+                left: 0;
+                width: 100%;
+                height:84px ;
+                background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"%3E%3Cpath fill="%23ffffff" fill-opacity="1" d="M0,192L48,192C96,192,192,192,288,186.7C384,181,480,171,576,160C672,149,768,139,864,133.3C960,128,1056,128,1152,144C1248,160,1344,192,1392,208L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"%3E%3C/path%3E%3C/svg%3E');
+                background-repeat:   repeat-x;        
+                z-index: 1;
+      } 
 
     .home-text p{
         font-size: 13px !important;
@@ -1063,36 +1310,44 @@ padding: 10 20 px ;
 }
 .in-touch {
     width: 100%;
-    padding-left: 10px;
 
 }
+.rejest {
+    display: inline-block ;
+}
+.rejest form {
+    display: block;
+    width: 100%;
+}
 .in-touch i {
-    margin-right: 5px;
-    text-align: center;
+    /* margin-right: 5px; */
+    /* text-align: center; */
 }
 .containe li {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     
         }
+
+
+        .book button {
+            border: solid 3px rgba(209, 49, 49, 0.959);
+            color: white;
+            margin-right: 20px;
+            padding: 0px 30px;
+            background-color:  rgb(226, 44, 44);
+            border-radius: 20px;
+            text-align: center;
+            
+        }
+        
+            .watch,
+            .book {
+                margin: auto;
+            }
 }
     
 
-.book button {
-    border: solid 3px rgba(209, 49, 49, 0.959);
-    color: white;
-    margin-right: 20px;
-    padding: 0px 30px;
-    background-color:  rgb(226, 44, 44);
-    border-radius: 20px;
-    text-align: center;
-    
-}
-
-    .watch,
-    .book {
-        margin: auto;
-    }
 
     .rejest,
     .email,
@@ -1129,10 +1384,13 @@ padding: 10 20 px ;
 
 
     @media screen and (min-width: 500px) and (max-width: 767px) {
-                .home-contante {
-        flex-wrap: wrap-reverse;
-        text-align: center;
-    }
+        .home-contante {
+            flex-wrap: wrap-reverse;
+            text-align: center;
+            height: auto;
+            margin-top: 20px;
+        }
+       
 
     .home-img {
         width: 100%;
@@ -1143,6 +1401,10 @@ padding: 10 20 px ;
         width: 100%;
         flex-wrap: wrap;
 
+    }
+    .home-text p {
+        font-size: 14px !important;
+        width: 100%;
     }
 
     .home-text h2 {
@@ -1224,14 +1486,14 @@ justify-content: center;
         align-items: center;
     }
 
-    .Mealify, .Subscribe, .in-touch {
-        width: 100%;
-        text-align: center;
+    .Mealify, .Subscribe {
+        width:100% ;
         margin-bottom: 20px;
     }
 
+
     .Mealify img {
-        width: 20%;
+        width: 10%;
         margin-bottom: 10px;
     }
 
@@ -1245,19 +1507,21 @@ justify-content: center;
 
     .Subscribe form {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+
     }
 
     .Subscribe form input {
-        width: 80%;
-        margin-bottom: 10px;
-        padding: 10px;
+        width: 90%;
+        margin-top: 10px;
+        margin-right: 10px;
+        height: 50px;
     }
 
     .Subscribe form button {
-        padding: 10px 20px;
-        width: 60%;
+        width: 35%;
+       height: 50px;
     }
 
     .quick-links {
@@ -1265,18 +1529,52 @@ justify-content: center;
 
     }
     .link {
-        display: block;
+        display: flex;
+        justify-content: space-between;
     }
     .link a {
         display: block;
+    }
+    .link {
+        align-items: start;
+    }
+    .in-touch {
+        width: 90%;
+
     }
 
     .underline {
         border-bottom: 3px solid red !important;
         width: auto !important;
     }
-  
+    .walter-img::before {
+        content: "";
+                position: absolute;
+                bottom: -3px;
+                left: 0;
+                width: 100%;
+                height:110px  ;
+                background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"%3E%3Cpath fill="%23ffffff" fill-opacity="1" d="M0,192L48,192C96,192,192,192,288,186.7C384,181,480,171,576,160C672,149,768,139,864,133.3C960,128,1056,128,1152,144C1248,160,1344,192,1392,208L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"%3E%3C/path%3E%3C/svg%3E');
+                background-repeat:   repeat-x;        
+                z-index: 1;
+      } 
+
+    .containe li {
+        display: flex;
+        /* justify-content: center; */
+        
+            }
+            .rejest {
+                display: block ;
+            }
+            .rejest form {
+                width: 100;
+            }
+
  
+            .in-touch .link {
+                display: block;
+            }
 }
 
 @media(max-width: 768px){
@@ -1305,7 +1603,10 @@ justify-content: center;
             .home-contante {
                 flex-wrap: wrap-reverse;
                 text-align: center;
+                height: auto;
+                margin-top: 20px;
             }
+           
         
             .home-img {
                 width: 100%;
@@ -1331,8 +1632,84 @@ justify-content: center;
             .underline{
                 width: auto !important;
             }
+            
     
   }
+
+
+
+  @media screen and (min-width: 1001px) and (max-width: 1400px) {
+  
+    .home-contante {
+        text-align: center;
+        height: auto;
+    }
+   
+
+.home-img  img {
+    width: 85% ;
+    flex-wrap: wrap;
+}
+.home-text p {
+    font-size: 15px;
+} 
+
+
+.walter-img::before {
+    content: "";
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 100%;
+            height:60px ;
+            background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"%3E%3Cpath fill="%23ffffff" fill-opacity="1" d="M0,192L48,192C96,192,192,192,288,186.7C384,181,480,171,576,160C672,149,768,139,864,133.3C960,128,1056,128,1152,144C1248,160,1344,192,1392,208L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"%3E%3C/path%3E%3C/svg%3E');
+            background-repeat:   repeat-x;        
+            z-index: 1;
+  } 
+
+  .our-address .icon i {
+    font-size: 17px;
+    border-radius: 50%;
+    color: white;
+    background-color: #ff004b;
+    border: solid 15px rgb(207, 12, 12);
+    vertical-align: middle;
+    ;
+}
+
+.footer .container-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Mealify {
+    flex: 1 1 45%; /* Take up roughly half the width */
+    margin: 10px;
+    order: 1; /* Default order */
+}
+
+.in-touch {
+    flex: 1 1 45%; /* Take up roughly half the width */
+    margin: 10px;
+    order: 2; /* Appear in the place of Subscribe */
+}
+
+.Subscribe {
+    flex: 1 1 100%; /* Take up full width */
+    margin: 10px;
+    order: 3; /* Appear below Mealify and in-touch */
+}
+}
+
+
+  
+  
+
+
+
+
+  
 
 
 .underline {
@@ -1348,5 +1725,8 @@ justify-content: center;
 }
 
 .dark-mode .fa-sun {
+    color: white;
+}
+.dark-mode .b h2 {
     color: white;
 }
